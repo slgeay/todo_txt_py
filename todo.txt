@@ -1,5 +1,5 @@
 Modularisation
-Meaningful unit tests
+x 2022-06-06 Meaningful unit tests
 x 2021-05-01 Save modified todo list back to file
 x 2021-05-03 delete +commands
 (C) update (called replace in the standard `todo.txt` CLI) +commands
@@ -8,7 +8,7 @@ x 2021-05-02 deprioritise +commands
 x 2021-05-04 report +commands
 x 2021-05-03 help / shorthelp +commands
 (C) Everything relating to contexts and projects
-(A) Sorting and filtering of the task list
+x 2022-06-06 Sorting and filtering of the task list
 (B) Multiple files? (not really necessary, apart from done.txt because it's in the standard)
 (A) Some sort of config file and/or environment variable telling it where to find the file
 (D) Syncing with Google Drive and/or Dropbox?
