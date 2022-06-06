@@ -1,8 +1,8 @@
+import builtins
 from os import remove
 from shutil import copyfile
 from typing import List
 
-import builtins
 import click
 
 from .task import Task
@@ -54,9 +54,13 @@ def list(sort, filter):
     numbered_tasks = builtins.list(enumerate(tasks))
 
     if filter:
-        numbered_tasks = [numbered_task for numbered_task in numbered_tasks if filter in numbered_task[1].description]
+        numbered_tasks = [
+            numbered_task
+            for numbered_task in numbered_tasks
+            if filter in numbered_task[1].description
+        ]
     if sort:
-        numbered_tasks.sort(key=lambda numbered_task:numbered_task[1].priority or 'Z')
+        numbered_tasks.sort(key=lambda numbered_task: numbered_task[1].priority or "Z")
 
     for numbered_task in numbered_tasks:
         print(f"[{numbered_task[0]}]: {str(numbered_task[1])}")
